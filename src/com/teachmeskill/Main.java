@@ -1,8 +1,4 @@
 package com.teachmeskill;
-
-
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.Scanner;
 
 class Main {
@@ -10,7 +6,7 @@ class Main {
     public static void main (String[] args){
 
 
-       choiseTask(enterNumber());
+       chooseTask(enterNumber());
 
     }
 
@@ -24,7 +20,8 @@ class Main {
 
     }
 
-    public static void choiseTask(int enteredNumber) {
+    //Метод выбора задачи для проверки
+    public static void chooseTask(int enteredNumber) {
 
         switch (enteredNumber) {
             case 1: System.out.println(task1.task1Result());

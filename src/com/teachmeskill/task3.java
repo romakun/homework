@@ -1,5 +1,4 @@
 package com.teachmeskill;
-
 import java.util.Scanner;
 
 public class task3 {
