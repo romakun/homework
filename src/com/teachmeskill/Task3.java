@@ -7,7 +7,7 @@ public class Task3 {
     public static String getModifiedNumber() {
         long enteredNumber = enterNumber();
         long newNumber = digitSign(enteredNumber);
-        String taskResult = ("Полученное число = " + newNumber);
+        String taskResult = "Полученное число = " + newNumber;
         return taskResult;
     }
 

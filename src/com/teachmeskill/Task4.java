@@ -33,7 +33,7 @@ public class Task4 {
         if (number3 > 0) {
             numberOfPositive++;
         }
-        task4Result = ("Количество положительных чисел в наборе = " + numberOfPositive);
+        task4Result = "Количество положительных чисел в наборе = " + numberOfPositive;
         return task4Result;
     }
 }

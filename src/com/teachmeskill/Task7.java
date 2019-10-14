@@ -7,7 +7,7 @@ public class Task7 {
     public static String getRightEnding() {
         int programmersCount = enterNumber();
         String wordEnding = findWordEnding(programmersCount);
-        wordEnding = (programmersCount + " Программист" + wordEnding);
+        wordEnding = programmersCount + " Программист" + wordEnding;
         return wordEnding;
     }
 

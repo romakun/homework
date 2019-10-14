@@ -40,7 +40,7 @@ public class Task5 {
         } else if (number3 < 0) {
             numberOfNegative++;
         }
-        task4Result = ("Количество положительных чисел в наборе = " + numberOfPositive + "; Количество отрицательных чисел в наборе = " + numberOfNegative);
+        task4Result = "Количество положительных чисел в наборе = " + numberOfPositive + "; Количество отрицательных чисел в наборе = " + numberOfNegative;
         return task4Result;
     }
 }

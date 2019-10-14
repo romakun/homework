@@ -19,11 +19,11 @@ public class Task6 {
 
         //Сравнение 2х чисел
         if (number1 > number2) {
-            maxNumber = ("Первое число больше второго и равняется " + number1);
+            maxNumber = "Первое число больше второго и равняется " + number1;
         } else if (number1 < number2) {
-            maxNumber = ("Второе число больше первого и равняется " + number2);
+            maxNumber = "Второе число больше первого и равняется " + number2;
         } else {
-            maxNumber = ("Оба числа равны " + number1);
+            maxNumber = "Оба числа равны " + number1;
         }
         return maxNumber;
     }
