@@ -2,9 +2,9 @@ package com.teachmeskill;
 
 import java.util.Scanner;
 
-public class task7 {
+public class Task7 {
 
-    public static String task7Result () {
+    public static String getRightEnding(){
 
         int programmersCount = enterNumber();
         String wordEnding = findWordEnding(programmersCount);
@@ -13,7 +13,7 @@ public class task7 {
     }
 
     //Метод воода количества программистов
-    public static int enterNumber() {
+    public static int enterNumber(){
 
         Scanner in = new Scanner(System.in);
         System.out.print("Введите количество программистов: ");
@@ -23,7 +23,7 @@ public class task7 {
 
 
     //Метод определения окончания для слова "Программист"
-    public static String findWordEnding(int enteredNumber) {
+    public static String findWordEnding(int enteredNumber){
 
         int lastCharacter1 = 0;
         int lastCharacter2 = 0;
@@ -32,15 +32,15 @@ public class task7 {
         lastCharacter1 = enteredNumber % 100;
         lastCharacter2 = lastCharacter1 % 10;
 
-        if (lastCharacter1 > 10 && lastCharacter1 < 20) {
+        if (lastCharacter1 > 10 && lastCharacter1 < 20){
 
            return wordEnding = "ов";
         }
-        if (lastCharacter2 > 1 && lastCharacter2 < 5) {
+        if (lastCharacter2 > 1 && lastCharacter2 < 5){
 
            return wordEnding = "а";
         }
-        if (lastCharacter2 == 1) {
+        if (lastCharacter2 == 1){
 
             return wordEnding = "";
         }

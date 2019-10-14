@@ -2,9 +2,9 @@ package com.teachmeskill;
 
 import java.util.Scanner;
 
-public class task4 {
+public class Task4 {
 
-    public static String task4Result(){
+    public static String getNumberOfPositive(){
 
         String task4Result;
         int numberOfPositive = 0;
@@ -37,4 +37,5 @@ public class task4 {
         task4Result = ("Количество положительных чисел в наборе = " + numberOfPositive);
         return task4Result;
     }
+
 }

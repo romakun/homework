@@ -1,9 +1,9 @@
 package com.teachmeskill;
 import java.util.Scanner;
 
-public class task3 {
+public class Task3 {
 
-    public static String task3Result() {
+    public static String getModifiedNumber(){
 
         long enteredNumber = enterNumber();
         long newNumber = digitSign(enteredNumber);
@@ -12,7 +12,7 @@ public class task3 {
     }
 
     //Метод воода числа
-    public static long enterNumber() {
+    public static long enterNumber(){
 
         Scanner in = new Scanner(System.in);
         System.out.print("Введите целое число: ");
@@ -24,13 +24,13 @@ public class task3 {
     //Метод для определения знака введенного числа и соответствующих его изменений
     public static long digitSign(long enteredNumber){
 
-        if (enteredNumber > 0) {
+        if (enteredNumber > 0){
 
             enteredNumber = enteredNumber + 1;
-        } else if (enteredNumber < 0) {
+        } else if (enteredNumber < 0){
 
             enteredNumber = enteredNumber - 2;
-        } else {
+        } else{
 
             enteredNumber = 10;
         }

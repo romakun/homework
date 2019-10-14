@@ -2,9 +2,9 @@ package com.teachmeskill;
 
 import java.util.Scanner;
 
-public class task6 {
+public class Task6 {
 
-    public static String task6Result() {
+    public static String getMaxNumber(){
 
         String maxNumber;
 
@@ -23,14 +23,15 @@ public class task6 {
 
             maxNumber = ("Первое число больше второго и равняется " + number1);
 
-        } else if (number1 < number2) {
+        } else if (number1 < number2){
 
             maxNumber = ("Второе число больше первого и равняется " + number2);
 
-        } else {
+        } else{
             maxNumber = ("Оба числа равны " + number1);
         }
 
         return maxNumber;
     }
+
 }

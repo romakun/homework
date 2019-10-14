@@ -1,9 +1,9 @@
 package com.teachmeskill;
 import java.util.Scanner;
 
-public class task2 {
+public class Task2 {
 
-    public static String task2Result() {
+    public static String getTriangleInfo(){
 
         String taskResult;
 
@@ -23,19 +23,20 @@ public class task2 {
         long sideC = inC.nextInt();
 
         //Проверяем существет ли треугольник
-        if (sideA + sideB > sideC) {
-            if (sideA + sideC > sideB) {
-                if (sideB + sideC > sideA) {
+        if (sideA + sideB > sideC){
+            if (sideA + sideC > sideB){
+                if (sideB + sideC > sideA){
                     taskResult = "Треугольник существует";
-                } else {
+                } else{
                     taskResult = "Треугольник не существует";
                 }
-            } else {
+            } else{
                 taskResult = "Треугольник не существует" ;
             }
-        } else {
+        } else{
             taskResult = "Треугольник не существует";
         }
         return taskResult;
     }
+
 }
