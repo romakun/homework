@@ -1,10 +1,10 @@
 package com.teachmeskill;
+
 import java.util.Scanner;
 
 public class Task3 {
 
-    public static String getModifiedNumber(){
-
+    public static String getModifiedNumber() {
         long enteredNumber = enterNumber();
         long newNumber = digitSign(enteredNumber);
         String taskResult = ("Полученное число = " + newNumber);
@@ -12,30 +12,22 @@ public class Task3 {
     }
 
     //Метод воода числа
-    public static long enterNumber(){
-
+    public static long enterNumber() {
         Scanner in = new Scanner(System.in);
         System.out.print("Введите целое число: ");
         long myNumber = in.nextInt();
         return myNumber;
-
     }
 
     //Метод для определения знака введенного числа и соответствующих его изменений
-    public static long digitSign(long enteredNumber){
-
-        if (enteredNumber > 0){
-
+    public static long digitSign(long enteredNumber) {
+        if (enteredNumber > 0) {
             enteredNumber = enteredNumber + 1;
-        } else if (enteredNumber < 0){
-
+        } else if (enteredNumber < 0) {
             enteredNumber = enteredNumber - 2;
-        } else{
-
+        } else {
             enteredNumber = 10;
         }
         return enteredNumber;
-
     }
-
 }

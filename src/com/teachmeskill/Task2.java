@@ -1,10 +1,10 @@
 package com.teachmeskill;
+
 import java.util.Scanner;
 
 public class Task2 {
 
-    public static String getTriangleInfo(){
-
+    public static String getTriangleInfo() {
         String taskResult;
 
         //Ввод стороны А
@@ -23,20 +23,19 @@ public class Task2 {
         long sideC = inC.nextInt();
 
         //Проверяем существет ли треугольник
-        if (sideA + sideB > sideC){
-            if (sideA + sideC > sideB){
-                if (sideB + sideC > sideA){
+        if (sideA + sideB > sideC) {
+            if (sideA + sideC > sideB) {
+                if (sideB + sideC > sideA) {
                     taskResult = "Треугольник существует";
-                } else{
+                } else {
                     taskResult = "Треугольник не существует";
                 }
-            } else{
-                taskResult = "Треугольник не существует" ;
+            } else {
+                taskResult = "Треугольник не существует";
             }
-        } else{
+        } else {
             taskResult = "Треугольник не существует";
         }
         return taskResult;
     }
-
 }

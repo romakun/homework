@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class Task4 {
 
-    public static String getNumberOfPositive(){
-
+    public static String getNumberOfPositive() {
         String task4Result;
         int numberOfPositive = 0;
 
@@ -25,17 +24,16 @@ public class Task4 {
         long number3 = in3.nextInt();
 
         //Подсчет положительных чисел
-        if (number1 > 0){
+        if (number1 > 0) {
             numberOfPositive++;
         }
-        if (number2 > 0){
+        if (number2 > 0) {
             numberOfPositive++;
         }
-        if (number3 > 0){
+        if (number3 > 0) {
             numberOfPositive++;
         }
         task4Result = ("Количество положительных чисел в наборе = " + numberOfPositive);
         return task4Result;
     }
-
 }

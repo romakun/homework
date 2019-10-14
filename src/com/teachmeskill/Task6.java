@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class Task6 {
 
-    public static String getMaxNumber(){
-
+    public static String getMaxNumber() {
         String maxNumber;
 
         //Ввод первого числа
@@ -19,19 +18,13 @@ public class Task6 {
         long number2 = in2.nextInt();
 
         //Сравнение 2х чисел
-        if (number1 > number2){
-
+        if (number1 > number2) {
             maxNumber = ("Первое число больше второго и равняется " + number1);
-
-        } else if (number1 < number2){
-
+        } else if (number1 < number2) {
             maxNumber = ("Второе число больше первого и равняется " + number2);
-
-        } else{
+        } else {
             maxNumber = ("Оба числа равны " + number1);
         }
-
         return maxNumber;
     }
-
 }

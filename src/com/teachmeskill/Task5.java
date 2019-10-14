@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class Task5 {
 
-    public static String getNumbersInfo(){
-
+    public static String getNumbersInfo() {
         String task4Result;
         int numberOfPositive = 0;
         int numberOfNegative = 0;
@@ -26,24 +25,22 @@ public class Task5 {
         long number3 = in3.nextInt();
 
         //Подсчет положительных и отрицательных чисел
-        if (number1 > 0){
+        if (number1 > 0) {
             numberOfPositive++;
-        } else if (number1 < 0){
+        } else if (number1 < 0) {
             numberOfNegative++;
         }
-        if (number2 > 0){
+        if (number2 > 0) {
             numberOfPositive++;
-        } else if (number2 < 0){
+        } else if (number2 < 0) {
             numberOfNegative++;
         }
-        if (number3 > 0){
+        if (number3 > 0) {
             numberOfPositive++;
-        } else if (number3 < 0){
+        } else if (number3 < 0) {
             numberOfNegative++;
         }
-
         task4Result = ("Количество положительных чисел в наборе = " + numberOfPositive + "; Количество отрицательных чисел в наборе = " + numberOfNegative);
         return task4Result;
     }
-
 }
