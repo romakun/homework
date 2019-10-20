@@ -1,4 +1,4 @@
-package com.teachmeskill;
+package com.teachmeskill.homework.hometask1;
 
 import java.util.Scanner;
 
