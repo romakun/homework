@@ -7,7 +7,7 @@ public class ArrayTask10 {
         int[] myArray = createArray();
 
         System.out.println(writeArray(myArray));
-        System.out.println("Индекс максимального числа в массиве : " + giveInfoAboutMaxNumber(myArray));
+        System.out.println("Индекс максимального числа в массиве : " + getMaxNumberInfo(myArray));
     }
 
     //Метод создания массива
@@ -32,7 +32,7 @@ public class ArrayTask10 {
     }
 
     //Метод определения индекса максимального числа в массиве
-    private static int giveInfoAboutMaxNumber(int[] myArray) {
+    private static int getMaxNumberInfo(int[] myArray) {
         int comparisonNumber = 0;
         int indexComparisonNumber = 0;
 
