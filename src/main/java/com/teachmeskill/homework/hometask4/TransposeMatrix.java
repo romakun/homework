@@ -3,7 +3,7 @@ package com.teachmeskill.homework.hometask4;
 import java.util.Random;
 import java.util.Scanner;
 
-public class MatrixTask6 {
+public class TransposeMatrix {
     public static void main(String[] args) {
         int[][] myMatrix = createMatrix();
         printMyMatrix(myMatrix);

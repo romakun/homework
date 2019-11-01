@@ -47,6 +47,8 @@ public class MatrixTask4 {
             System.out.println("Произведение главной диагонали больше и = " + firstDigitsComposition);
         } else if (secondDigitsComposition > firstDigitsComposition) {
             System.out.println("Произведение второстепенной диагонали больше и = " + firstDigitsComposition);
-        } else System.out.println("Произведение диагоналей одинаково и = " + firstDigitsComposition);
+        } else {
+            System.out.println("Произведение диагоналей одинаково и = " + firstDigitsComposition);
+        }
     }
 }
