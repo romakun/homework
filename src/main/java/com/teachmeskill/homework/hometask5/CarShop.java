@@ -2,23 +2,26 @@ package com.teachmeskill.homework.hometask5;
 
 public class CarShop {
     public static void main(String[] args) {
-        Car[] saloonСar = new Car[50];
+        CarService carService = new CarService();
+        RandomData randomData = new RandomData();
 
-        for (int i = 0; i < saloonСar.length; i++) {
-            saloonСar[i] = new Car(RandomData.getRandomId(), RandomData.getRandomBrand(), RandomData.getRandomModel(), RandomData.getRandomYear(), RandomData.getRandomColor(), RandomData.getRandomPrice(), RandomData.getRandomRegistrationNumber());
+        Car[] saloonCar = new Car[50];
+
+        for (int i = 0; i < saloonCar.length; i++) {
+            saloonCar[i] = new Car(randomData.getRandomId(), randomData.getRandomBrand(), randomData.getRandomModel(), randomData.getRandomYear(), randomData.getRandomColor(), randomData.getRandomPrice(), randomData.getRandomRegistrationNumber());
         }
 
-        for (int i = 0; i < saloonСar.length; i++) {
-            System.out.println("Car: id" + saloonСar[i].getId() + "; " + saloonСar[i].getBrand() + "; Model:" + saloonСar[i].getModel() + "; year:" + saloonСar[i].getCreationYear() + "; " + saloonСar[i].getColor() + "; $" + saloonСar[i].getPrice() + "; Registration Number: " + saloonСar[i].getRegistrationNumber());
+        for (int i = 0; i < saloonCar.length; i++) {
+            System.out.println("Car: id" + saloonCar[i].getId() + "; " + saloonCar[i].getBrand() + "; Model:" + saloonCar[i].getModel() + "; year:" + saloonCar[i].getCreationYear() + "; " + saloonCar[i].getColor() + "; $" + saloonCar[i].getPrice() + "; Registration Number: " + saloonCar[i].getRegistrationNumber());
         }
 
         System.out.println();
-        CarService.getCarBrand(saloonСar);
+        carService.getCarBrand(saloonCar);
 
         System.out.println();
-        CarService.getCarBrandExploitation(saloonСar);
+        carService.getCarBrandExploitation(saloonCar);
 
         System.out.println();
-        CarService.getCarYearAndPrice(saloonСar);
+        carService.getCarYearAndPrice(saloonCar);
     }
 }

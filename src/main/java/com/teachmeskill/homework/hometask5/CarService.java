@@ -3,9 +3,9 @@ package com.teachmeskill.homework.hometask5;
 import java.util.Scanner;
 
 public class CarService {
-    static Scanner in = new Scanner(System.in);
+    private static Scanner in = new Scanner(System.in);
 
-    public static void getCarBrand(Car[] saloonCar) {
+    public void getCarBrand(Car[] saloonCar) {
         System.out.print("Выберите желаемую марку автомобиля: BMW, Subaru, Mercedes, Lamborghini, Citroen, Peugeot, Reno, Audi, Ferrari, Escalate: ");
         String carBrand = in.nextLine();
         for (int i = 0; i < saloonCar.length; i++) {
@@ -15,7 +15,7 @@ public class CarService {
         }
     }
 
-    public static void getCarBrandExploitation(Car[] saloonCar) {
+    public void getCarBrandExploitation(Car[] saloonCar) {
         System.out.print("Выберите желаемую марку автомобиля: BMW, Subaru, Mercedes, Lamborghini, Citroen, Peugeot, Reno, Audi, Ferrari, Escalate: ");
         String carBrand = in.nextLine();
         System.out.println();
@@ -29,7 +29,7 @@ public class CarService {
         }
     }
 
-    public static void getCarYearAndPrice(Car[] saloonCar) {
+    public void getCarYearAndPrice(Car[] saloonCar) {
         System.out.print("Введите год выпуска автомобиля: ");
         int carYear = in.nextInt();
         System.out.print("Введите цену автомобиля: ");
